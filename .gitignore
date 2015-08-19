@@ -12,3 +12,5 @@ UCIHARDataset/features.txt
 *.un~
 
 *.md~
+
+.Rhistory

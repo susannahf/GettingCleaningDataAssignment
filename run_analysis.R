@@ -21,11 +21,11 @@ colnames(test_data) <- c("SubjectID",feature_names[,2],"activity")
 colnames(training_data) <- c("SubjectID",feature_names[,2],"activity")
 
 # join both data sets
-fulldata <- rbind(test_data,training_data)
+fullData <- rbind(test_data,training_data)
 
 # Uses descriptive activity names to name the activities in the data set
 # add activities as labels
-fullData$activity <- as.factor(fulldata$activity)
+fullData$activity <- as.factor(fullData$activity)
 levels(fullData$activity) <- label_names[,2]
 
 #Extracts only the measurements on the mean and standard deviation for each measurement.

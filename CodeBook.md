@@ -18,12 +18,12 @@ The ID number of the subject (1-30)
 
 ### activity
 The activity being carried out, coded as a factor.  Possible activities are:
-1. WALKING 
-2. WALKING_UPSTAIRS
-3. WALKING_DOWNSTAIRS
-4. SITTING
-5. STANDING
-6. LAYING
+- 1. WALKING 
+- 2. WALKING_UPSTAIRS
+- 3. WALKING_DOWNSTAIRS
+- 4. SITTING
+- 5. STANDING
+- 6. LAYING
 
 
 ## Transformations
@@ -34,3 +34,6 @@ The subject ID has been added as the first column ("Subject ID")
 The activity type, coded as a factor, has been added as the last column ("activity")
 
 Only features containing "mean(" or "std(" in the original feature name have been retained.  All other features have been discarded.
+
+
+NOTE TO SELF: FEATURE DESCRIPTIONS IN FEATURES_INFO.TXT, INCLUDE UNITS
