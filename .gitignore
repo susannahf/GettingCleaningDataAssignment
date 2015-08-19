@@ -6,3 +6,9 @@ UCIHARDataset/features_info.txt
 UCIHARDataset/features.txt
 
 *.txt
+
+*.swp
+
+*.un~
+
+*.md~
