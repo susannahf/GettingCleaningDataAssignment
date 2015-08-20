@@ -48,3 +48,14 @@ colnames(finalData) <- coln # set these as column names
 
 #From the data set in step 4, creates a second, independent tidy data set 
 #  with the average of each variable for each activity and each subject.
+library(reshape2)
+# melt data
+melted <- melt(finalData,id.vars = c("SubjectID","activity"))
+# cast to make tidy data set with variables in columns, and Subjects and activities in rows
+tidyData <- dcast(melted,SubjectID + activity ~ variable, mean)
+
+# save tidy data
+write.table(tidyData,"tidydata.txt",row.names = FALSE)
+
+
+

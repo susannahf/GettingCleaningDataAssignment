@@ -20,6 +20,9 @@ I then create useful column names using feature_names (I have to add the column 
 
 I then use rbind to join the data sets to make fullData
 
-This has lots of columns we're not interested in.  I interpreted the brief to mean that the smaller set should include all features with mean() or std() in the name.  I used grep to pick these out from the vector of column names by searching for "mean(" or "std(" (I have to use two backslashes to escape the "(" character as otherwise it has a special meaning in grep).  I also search for "SubjectID" and "activity" because I want to retain these columns.  Once I have the required columns, I just subset them out to create finalData
+This has lots of columns we're not interested in.  I interpreted the brief to mean that the smaller set should include all features with mean() or std() in the name.  I used grep to pick these out from the vector of column names by searching for "mean(" or "std(" (I have to use two backslashes to escape the "(" character as otherwise it has a special meaning in grep).  I also search for "SubjectID" and "activity" because I want to retain these columns.  Once I have the required columns, I just subset them out to create finalData.
+
+I then create the tidy data set tidyData by melting and casting finalData.  The tidy data set has columns for SubjectID, activity, and each of the variables in finalData.  Each row represents a combination of SubjectID and activity.  The file can be read into R using the command:
+read.table("tidydata.txt",header=T)
 
  
