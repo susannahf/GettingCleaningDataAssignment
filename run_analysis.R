@@ -35,5 +35,16 @@ wantedcols <- grep("mean\\(|std\\(|activity|SubjectID", colnames(fullData))
 finalData <- fullData[,wantedcols]
 
 #Appropriately labels the data set with descriptive variable names. 
+coln <- colnames(finalData)
+coln <- sub("^f","fft",coln) # replace f at start of name with fft
+coln <- sub("^t","time",coln) # replace t at start of name with time
+coln <- sub("Acc","Accelerometer",coln) # replace Acc with Accelerometer
+coln <- sub("Gyro","Gyroscope", coln) # replace Gyro with Gyroscope
+coln <- sub("\\(\\)\\-","",coln) # remove "()-"
+coln <- sub("\\(\\)","",coln) # remove leftover "()"
+coln <- sub("std","StandardDeviation",coln)
+
+colnames(finalData) <- coln # set these as column names
+
 #From the data set in step 4, creates a second, independent tidy data set 
 #  with the average of each variable for each activity and each subject.
