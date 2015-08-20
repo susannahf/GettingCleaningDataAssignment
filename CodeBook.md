@@ -45,57 +45,43 @@ These variables are in either the time or frequency domain (fft of time domain),
 | timeBodyGyroscopeJerk-StandardDeviationX | gyroscope | time | standard deviation of X angular jerk of body | m/s/s/s |        
 | timeBodyGyroscopeJerk-StandardDeviationY | gyroscope | time | standard deviation of Y angular jerk of body | m/s/s/s |
 | timeBodyGyroscopeJerk-StandardDeviationZ | gyroscope | time | standard deviation of Y angular jerk of body | m/s/s/s |
-| timeBodyAccelerometerMag-mean | accelerometer | time | mean of body acceleration magnitude | m/s/s|            
+| timeBodyAccelerometerMag-mean | accelerometer | time | mean of body acceleration magnitude | m/s/s |            
 | timeBodyAccelerometerMag-StandardDeviation | accelerometer | time | standard deviation of body acceleration magnitude | m/s/s | 
-| timeGravityAccelerometerMag-mean"                 
-| timeGravityAccelerometerMag-StandardDeviation"    
-| timeBodyAccelerometerJerkMag-mean"                
-| timeBodyAccelerometerJerkMag-StandardDeviation"   
-| timeBodyGyroscopeMag-mean"                        
-| timeBodyGyroscopeMag-StandardDeviation"           
-| timeBodyGyroscopeJerkMag-mean"                    
-| timeBodyGyroscopeJerkMag-StandardDeviation"       
-| fftBodyAccelerometer-meanX"                       
-| fftBodyAccelerometer-meanY"                       
-| fftBodyAccelerometer-meanZ"                       
-| fftBodyAccelerometer-StandardDeviationX"          
-| fftBodyAccelerometer-StandardDeviationY"          
-| fftBodyAccelerometer-StandardDeviationZ"          
-| fftBodyAccelerometerJerk-meanX"                   
-| fftBodyAccelerometerJerk-meanY"                   
-| fftBodyAccelerometerJerk-meanZ"                   
-| fftBodyAccelerometerJerk-StandardDeviationX"      
-| fftBodyAccelerometerJerk-StandardDeviationY"      
-| fftBodyAccelerometerJerk-StandardDeviationZ"      
-| fftBodyGyroscope-meanX"                           
-| fftBodyGyroscope-meanY"                           
-| fftBodyGyroscope-meanZ"                           
-| fftBodyGyroscope-StandardDeviationX"              
-| fftBodyGyroscope-StandardDeviationY"              
-| fftBodyGyroscope-StandardDeviationZ"              
-| fftBodyAccelerometerMag-mean"                     
-| fftBodyAccelerometerMag-StandardDeviation"        
-| fftBodyBodyAccelerometerJerkMag-mean"             
-| fftBodyBodyAccelerometerJerkMag-StandardDeviation"
-| fftBodyBodyGyroscopeMag-mean"                     
-| fftBodyBodyGyroscopeMag-StandardDeviation"        
-| fftBodyBodyGyroscopeJerkMag-mean"                 
-| fftBodyBodyGyroscopeJerkMag-StandardDeviation"    
-| activity"                    
-
-
-
-
-### TimeBodyAccelerometer-meanX, TimeBodyAccelerometer-meanY, TimeBodyAccelerometer-meanZ
-
-
-### timeBody
-
-
-
-
-
-
+| timeGravityAccelerometerMag-mean | accelerometer | time | mean of gravitational acceleration magnitude | m/s/s | 
+| timeGravityAccelerometerMag-StandardDeviation | accelerometer | time | standard deviation of gravitational acceleration magnitude | m/s/s | 
+| timeBodyAccelerometerJerkMag-mean | accelerometer | time | mean of body jerk magnitude | m/s/s/s |                 
+| timeBodyAccelerometerJerkMag-StandardDeviation | accelerometer | time | standard deviation of body jerk magnitude | m/s/s/s | 
+| timeBodyGyroscopeMag-mean | gyroscope | time | mean of body angular acceleration magnitude | m/s/s |
+| timeBodyGyroscopeMag-StandardDeviation | gyroscope | time | standard deviation of body angular acceleration magnitude | m/s/s |          
+| timeBodyGyroscopeJerkMag-mean  | gyroscope | time | mean of body angular jerk magnitude | m/s/s/s |
+| timeBodyGyroscopeJerkMag-StandardDeviation  | gyroscope | time | standard deviation of body angular jerk magnitude | m/s/s/s |
+| fftBodyAccelerometer-meanX | accelerometer | frequency | mean X acceleration of body | m/s/s |
+| fftBodyAccelerometer-meanY | accelerometer | frequency | mean Y acceleration of body | m/s/s |                       
+| fftBodyAccelerometer-meanZ | accelerometer | frequency | mean Z acceleration of body | m/s/s |
+| fftBodyAccelerometer-StandardDeviationX | accelerometer | frequency | standard deviation of X acceleration of body | m/s/s |
+| fftBodyAccelerometer-StandardDeviationY | accelerometer | frequency | standard deviation of Y acceleration of body | m/s/s |         
+| fftBodyAccelerometer-StandardDeviationZ | accelerometer | frequency | standard deviation of Z acceleration of body | m/s/s |          
+| fftBodyAccelerometerJerk-meanX | accelerometer | frequency | mean X jerk of body | m/s/s/s |        
+| fftBodyAccelerometerJerk-meanY | accelerometer | frequency | mean Y jerk of body | m/s/s/s |                   
+| fftBodyAccelerometerJerk-meanZ | accelerometer | frequency | mean Z jerk of body | m/s/s/s |
+| fftBodyAccelerometerJerk-StandardDeviationX | accelerometer | frequency | standard deviation of X jerk of body | m/s/s/s |  
+| fftBodyAccelerometerJerk-StandardDeviationY | accelerometer | frequency | standard deviation of Y jerk of body | m/s/s/s |      
+| fftBodyAccelerometerJerk-StandardDeviationZ | accelerometer | frequency | standard deviation of Z jerk of body | m/s/s/s |
+| fftBodyGyroscope-meanX | gyroscope | frequency | mean X angular acceleration of body | m/s/s |                          
+| fftBodyGyroscope-meanY | gyroscope | frequency | mean Y angular acceleration of body | m/s/s |                            
+| fftBodyGyroscope-meanZ | gyroscope | frequency | mean Z angular acceleration of body | m/s/s | 
+| fftBodyGyroscope-StandardDeviationX | gyroscope | frequency | standard deviation of X angular acceleration of body | m/s/s | 
+| fftBodyGyroscope-StandardDeviationY | gyroscope | frequency | standard deviation of Y angular acceleration of body | m/s/s |            
+| fftBodyGyroscope-StandardDeviationZ | gyroscope | frequency | standard deviation of Z angular acceleration of body | m/s/s |
+| fftBodyAccelerometerMag-mean | accelerometer | frequency | mean of body acceleration magnitude | m/s/s |         
+| fftBodyAccelerometerMag-StandardDeviation | accelerometer | frequency | standard deviation of body acceleration magnitude | m/s/s |
+| fftBodyBodyAccelerometerJerkMag-mean | accelerometer | frequency | mean of body jerk magnitude | m/s/s/s |  
+| fftBodyBodyAccelerometerJerkMag-StandardDeviation | accelerometer | frequency | standard deviation of body jerk magnitude | m/s/s/s |
+| fftBodyBodyGyroscopeMag-mean | gyroscope | frequency | mean of body angular acceleration magnitude | m/s/s |              
+| fftBodyBodyGyroscopeMag-StandardDeviation | gyroscope | frequency | standard deviation of body angular acceleration magnitude | m/s/s |
+| fftBodyBodyGyroscopeJerkMag-mean | gyroscope | frequency | mean of body angular jerk magnitude | m/s/s/s |
+| fftBodyBodyGyroscopeJerkMag-StandardDeviation | gyroscope | frequency | standard deviation of body angular jerk magnitude | m/s/s/s |
+                    
 
 ### activity
 The activity being carried out, coded as a factor.  Possible activities are:
@@ -116,5 +102,3 @@ The activity type, coded as a factor, has been added as the last column ("activi
 
 Only features containing "mean(" or "std(" in the original feature name have been retained.  All other features have been discarded.
 
-
-NOTE TO SELF: FEATURE DESCRIPTIONS IN FEATURES_INFO.TXT, INCLUDE UNITS
